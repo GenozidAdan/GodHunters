@@ -150,6 +150,7 @@ body::after {
         height: auto;
         margin-bottom: 20px;
         width: 60%;
+	border-radius: 50%;
       }
       
       .rectangulo h3 {
