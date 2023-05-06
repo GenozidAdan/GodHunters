@@ -162,6 +162,12 @@ body::after {
       }
       
       .rectangulo a:hover {
-        color: #ffc107;
+        color: #FDFDF8;
+      }
+
+      .rectangulo:hover {
+        transform: scale(1.04);
+        background-color: #EAEAE7;
+        cursor: pointer;
       }
       
