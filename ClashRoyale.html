@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinión Clash Royale</title>
+    <style>
+        body {
+           background-image: linear-gradient(to bottom, #f0d8f5, #470678);
+        }
+        section {
+            display: flex;
+            width: 600px;
+            height: 430px;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+        
+        section img {
+            width: 0px;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .8;
+        }
+
+        section img:hover {
+            cursor: crosshair;
+            width: 300px;
+            opacity: 1;
+            filter: contrast(120%);
+        }
+
+        .box {
+      width: 315px;
+      height: 320px;
+      background-color:  #ae11da;
+      border: 1px solid #ccc;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      margin-left: 38%;
+    }
+
+    .box p {
+      margin: 0;
+    }
+
+    .box::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: #fe9ee9;
+      animation: slide 2s 1;
+    }
+
+    @keyframes slide {
+      0% {
+        left: -100%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+
+    </style>
+</head>
+<body>
+    
+    <section>
+            <img src="https://esports.eldesmarque.com/wp-content/uploads/2022/04/prince.jpg" alt="Principe">
+            <img src="https://esports.eldesmarque.com/wp-content/uploads/2022/02/PEKKA.jpg" alt="Pekka">
+            <img src="https://esports.eldesmarque.com/wp-content/uploads/2021/12/Princesa.jpg" alt="Pricesa">
+            <img src="https://esports.eldesmarque.com/wp-content/uploads/2022/04/Brujita.jpg" alt="bruja">
+            <img src="https://esports.eldesmarque.com/wp-content/uploads/2022/02/mega-1.jpg" alt="Megacaballero">
+    </section>
+
+    <div class="box">
+        <h3><strong>Nombre: </strong> Clash Royale</h3>
+        <h3><strong>Creador: </strong> Supercell</h3>
+        <h3><strong>Lanzamiento: </strong> 01/03/2016</h3>
+        <h3><strong>Calificación: </strong> 4.3 estrellas</h3>
+        <p>¡Atrévete a pisar la arena! De los creadores de Clash of Clans, llega Clash Royale, un juego multijugador en tiempo real protagonizado por tus personajes favoritos de Clash, además de por nobles y muchos otros elementos.</p>
+    </div>
+</body>
+</html>
