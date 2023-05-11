@@ -1,23 +1,26 @@
 body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	margin-top: 0;
-  background-image: url('img/2.jpeg');
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  margin-top: 0;
+  background-image: url("img/2.jpg");
   background-size: cover;
   position: relative;
 }
 
 body::after {
   content: "";
-  background-color: rgba(0,0,0,0.2); /* Aquí puedes ajustar la opacidad al valor que desees */
+  background-color: rgba(242, 243, 244, 0.5);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
+  pointer-events: none;
 }
+
+
 
 .image-container {
     position: relative;
@@ -43,7 +46,7 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* El último valor es la opacidad */
+    background-color: rgba(0, 0, 0, 0.2); /* El último valor es la opacidad */
 }
 
 .text-container {
@@ -91,7 +94,22 @@ body::after {
   h2 {
 	font-size: 44px;
 	margin-bottom: 10px;
+  font-family: 'Roboto Serif', serif;
   }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Serif', serif;
+    }
+  h4 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-align: justify;
+      font-family: 'Roboto Serif', serif;
+      }
+
+
 
   .list-container {
     text-align: center;
@@ -150,8 +168,11 @@ body::after {
         height: auto;
         margin-bottom: 20px;
         width: 60%;
-	border-radius: 50%;
+        border-radius: 50%;
+        min-width: 200px; /* Ancho mínimo deseado */
+        min-height: 200px; /* Alto mínimo deseado */
       }
+      
       
       .rectangulo h3 {
         margin: 0;
@@ -171,4 +192,22 @@ body::after {
         background-color: #EAEAE7;
         cursor: pointer;
       }
+      
+      .video {
+        width: 80%;
+        height: 30vh;
+        margin: 0 auto;
+        position: relative;
+        background-color: #EAEAE7;
+      }
+      
+      .video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      
       
